@@ -1,39 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#BC8887" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thiệp cưới Khiêm & XXXX</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bulma Version 0.8.x-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/menikah.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+    <!-- Begin Script for Countdown -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <title>Phương Chíp</title>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link type="text/css" href="./public/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="./public/js/jquery.min.js" type="text/javascript"></script>
+      gtag('config', 'UA-23064379-20');
+    </script>
+    <!-- Begin Script for Countdown -->
 
-<body>
-    <audio autoplay loop>
-        <source src="public/studio/st.mp3" type="audio/mpeg">
-    </audio>
-    <dl>
-        <dt></dt>
-        <div class="content-carrousel">
-            <dd><img src="./public/images/11.jpg" /></dd>
-            <dd><img src="./public/images/12.jpg" /></dd>
-            <dd><img src="./public/images/13.jpg" /></dd>
-            <dd><img src="./public/images/14.jpg" /></dd>
-            <dd><img src="./public/images/15.jpg" /></dd>
-            <dd><img src="./public/images/16.jpg" /></dd>
-            <dd><img src="./public/images/17.jpg" /></dd>
-            <dd><img src="./public/images/18.jpg" /></dd>
-            <dd><img src="./public/images/19.jpg" /></dd>
-            <dd><img src="./public/images/20.jpg" /></dd>
+    <!-- Github Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/favicon.png" alt="Flower" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Thời gian
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Địa điểm
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang-sherly-daeng">
+                  Về Khiêm & Xxxx
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  Vui lòng xác nhận
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">THIỆP CƯỚI</h1>
+            <h2 class="title">Xuân Khiêm & XXXXX XXXX</h2>
+            <h4 class="subtitle tempatwaktu">
+              
+              Saturday, xx xx 20xx 
+                </br>
+                Cẩm Văn, Cẩm Giàng
+                </br>
+                Hải Dương
+            </h4>
+          </div>
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Ngày</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">Giờ</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">Phút</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">Giây</p></li>
+            </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '03/21/2025 17:00:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                offset: +7, // TODO Your Timezone Offset
+                day: 'Ngày',
+                days: 'Ngày'
+              }, function () {
+                // alert('Done!');
+              });
+            </script>  
+          </div>
+          <!-- End Countdown -->
         </div>
-    </dl>
-    <div class="name">Phương Chíp</div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Thời gian</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Địa điểm</a>
+                  </li>
+                  <li>
+                    <a href="#tentang-sherly-daeng">Về Khiêm & Xxxx</a>
+                  </li>
 
+                  <li>
+                    <a href="#rsvp">Vui lòng xác nhận</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+    <!-- Begin regular-section-->
+     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
         
-    <script type="text/javascript" src="./public/js/script.js"></script>
-</body>
-</head>
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/logo_happy_wedding.png" style="width: 400px; height: 300px;" class="bismillah has-text-centered" alt="Đoàn Khiêm">
+        </div>
+        <!-- <span class="space40px"></span>
+        <span class="space40px"></span> -->
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            Doàn Xuân Khiêm
+          </div>
+          <div class="ampersand">&</div>
+          <div class="nama-lengkap">
+          Xxxx Yyyyy Zzzzz
+          </div>
+           
+        </div>
+        <span class="space40px"></span>
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+        </div>
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+      </section>
+      <!-- End regular-section-->    
+      
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Thời gian</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div
+              class="column is-4 has-vertically-aligned-content">
+            
+              <p class="is-larger has-text-centered">
+                  <div class="waktu tanggal-hari has-text-centered">Thứ nào đó</div> 
+                  <div class="waktu tanggal-angka has-text-centered">00</div>
+                  <div class="waktu tanggal-bulan has-text-centered">XX 20xx</div>
+              </p>
+            
+            </div>
+            <div class="column is-4 has-vertically-aligned-content">
+            
+              <p class="waktu is-larger has-text-centered">
+                Thời gian đón dâu:
+                <br>
+                <strong>00.00 AM</strong>
+              </p>
+            
+            </div>
+
+            <div class="column is-4 has-vertically-aligned-content">
+              
+              <h1 class="waktu is-larger has-text-centered">
+                Thời gian hôn lễ:
+                <br>
+                <strong>00.00  - 00.00 AM</strong>
+              </h1>
+              
+              
+            </div>
+
+          </div>
+        </div>
+        <div class="space40px"></div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            <i class="far fa-calendar-plus"></i>
+            &nbsp;&nbsp;Thêm vào lịch
+          </a>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <section class="section-darker" id="lokasi" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Địa điểm</h1>
+            <p class="tempat is-larger has-text-centered">
+              <strong>NHÀ TRAI: ĐOÀN KHIÊM</strong>
+              <br>
+              Xóm Trạm Nội, Thôn Trạm Nội Trang, Xã Cẩm Văn
+              <br>
+              Huyện Cẩm Giàng, Tỉnh Hải Dương.
+              <br>
+            </p>
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d728.7795737130978!2d106.25298822915268!3d20.986905951265516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31359daf01513ffb%3A0x88968030073dd2f1!2zTmjDoCDEkG_DoG4gS2hpw6pt!5e1!3m2!1svi!2s!4v1672153610132!5m2!1svi!2s" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://goo.gl/maps/ogH8FreiyeGuen5h8" class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang Sherly and Daeng -->
+      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+        <div class="container">
+          <div class="columns is-multiline">  
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">ĐOÀN KHIÊM & ZZZZ YYYY</h1>
+            
+
+          
+          <!-- IMAGES -->  
+        <div class=" tile">
+          <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+                <p class="title-foto">Xxxx 20xx</p>
+                <p class="subtitle-foto">
+                  Lần đầu tiên quen nhau tại <a href="https://goo.gl/maps/KDDW9KH2GszWUtmt8" target="_blank">D Free Book</a>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+                <p class="title-foto">
+                  Xxxx 20xx - Xxxx 20xx
+                </p>
+                <p class="subtitle-foto">
+                  Bắt đầu nhắn tin và hẹn nhau
+                </p>   
+              </div>            
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">  
+                <p class="title-foto">
+                  Xxxx 20xx
+                </p>
+                <p class="subtitle-foto">
+                  Chuyện tình bắt đầu :v
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="space24px"></div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child notification foto6" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Xxxx 20xx</p>
+              <p class="subtitle-foto">Về ra mắt</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification foto4" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Xxxx 20xx</p>
+              <p class="subtitle-foto">Họp mặt 2 gia đình</p>
+            </div>
+          </article>
+        </div>
+        <div class="tile is-parent">              
+          <article class="tile is-child notification foto5" data-aos="fade-up" data-aos-easing="linear">
+            <div class="content">
+              <p class="title-foto">Xxxx 20xx</p>
+              <p class="subtitle-foto">Kết hôn</p>
+            </div>
+          </article>
+        </div>
+      </div>   
+          <!-- IMAGES -->
+          <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+            </div> 
+            <div class="space40px"></div>
+            <div class="space40px"></div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Tentang Sherly dan Daeng -->
+
+      <!-- Begin RSVP Content -->
+      <section class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div class="columns is-multiline">          
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">XÁC NHẬN THAM DỰ</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">
+                Thật vinh dự và hạnh phúc cho chúng tôi
+                <br>
+                nếu Anh/Chị/Em có nhã ý đến tham dự để chúc phúc.
+                <br>
+                <br>
+                Nếu bạn có thể tham dự, chúng tôi đang chờ xác nhận, 
+                <br>
+                Thông tin: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, error?.
+                <br>
+                <br>
+                Nếu không thể tham dự đám cưới của chúng tôi,
+                <br> 
+                không sao cả, tôi hy vọng chúng ta có thể gặp nhau vào dịp khác .
+                <br>
+                <br>
+                Hãy giữ gìn sức khỏe và bảo trọng nhé :)
+                </p>
+     
+              <a href="https://www.facebook.com/doankhiem1999" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-facebook"></i>
+                &nbsp;&nbsp;Đoàn Khiêm
+              </a>
+              
+
+          
+              <!-- <a href="https://api.whatsapp.com/send?phone=628xxxxxxxxxx&text=Halo%20Daeng,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                <i class="fab fa-whatsapp"></i>
+                &nbsp;&nbsp; Kabari Daeng
+              </a > -->
+              <div class="space40px"></div>
+
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+              </div>
+              <div class="space40px"></div>
+              <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                Chúc mừng hạnh phúc
+                <br>
+                <a class="instagram":" href="https://www.facebook.com/doankhiem1999" target="_blank" alt="Instagram Sherly">
+                  <i class="fab fa-instagram"></i> @doankhiem
+                </a>
+                &nbsp
+                <!-- <a class="instagram" href="https://instagram.com/daengdoang" target="_blank" alt="Instagram Daeng">
+                  <i class="fab fa-instagram"></i> @daengdoang
+                </a> -->
+              </p>
+
+            </div>
+ 
+         </div>
+        </div>
+      </section>
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <!-- <div class="footer">
+      <div class="container">
+        <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
+          <p class="has-vertically-align">2020 &copy Daeng Muhammad Feisal</p>
+        </a>
+        <a href="https://bulma.io" class="has-vertically-align">
+          <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
+        </a>
+        <a href="https://www.netlify.com">
+          <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
+        </a>
+      </div>
+    </div> -->
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/menikah.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
 </html>
