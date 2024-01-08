@@ -4,20 +4,18 @@
 
 <h2 align="center">About me</h2>
 
-I am a Final Year Software Engineering Student at Hanoi University of Natural Resources and Environment. I love Machine Learning and trying to find more about Full Stack Web Development
+I love Machine Learning and trying to find more about Full Stack Web Development
 
-- 🔭 I’m currently working on TNHH VKX
-- 🌱 I’m currently learning Framework Laravel
+- 🔭 I’m currently working on Townsoft Vina
+- 🌱 I’m currently working with Framework Laravel and VueJs
 
-<h4 align="center">Profile stats :musical_keyboard:</h4>
+<h4 align="center">Profile stats :musical_keyboard: | Top langs :tongue:</h4>
 
-<p align="center"><img src="https://github-readme-stats.vercel.app/api?username=DoanKhiem&show_icons=true&theme=radical" alt="AnhellO :: Profile Stats" /></p>
-
-<h4 align="center">Top langs :tongue:</h4>
-
-<p align="center"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=DoanKhiem&theme=radical&layout=compact" alt="AnhellO :: Top Langs" /></p>
-
-<h2 align="center">You can reach me at :alien:</h2>
+<div align="center">
+    <img align="center" src="https://github-readme-stats-one-bice.vercel.app/api?username=DoanKhiem&count_private=true&theme=tokyonight&show_icons=true&include_all_commits=true&role=OWNER,ORGANIZATION_MEMBER,COLLABORATOR" height="185px" /> 
+    <img align="center" src="https://github-readme-stats-one-bice.vercel.app/api/top-langs/?username=DoanKhiem&layout=compact&langs_count=8&theme=tokyonight&role=OWNER,COLLABORATOR" height="185px" />
+</div>
+<h2 align="center">You can contact me at :alien:</h2>
 
 <p align="center">
   <a href="https://www.facebook.com/doankhiem1999">
@@ -28,7 +26,7 @@ I am a Final Year Software Engineering Student at Hanoi University of Natural Re
     <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="Hồ sơ của Đoàn Khiêm" height="30" width="30">
   </a>
   
-  <a href="https://www.youtube.com/channel/UCN40Hf6mdrQ5IK3YPXXqb2w">
-    <img src="https://www.vectorlogo.zone/logos/youtube/youtube-icon.svg" alt="Hồ sơ của Đoàn Khiêm" height="30" width="30">
+  <a href="mailto:khiembi161219@gmail.com">
+    <img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="Hồ sơ của Đoàn Khiêm" height="30" width="30">
   </a>
 </p>
